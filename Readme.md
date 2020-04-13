@@ -113,7 +113,7 @@ movies-services
 
 ### Estrutura de pastas e arquivos
 ~~~
-- movies-service/
+- cinema-catalog-service/
   | - data/
   | - src/
      | - api/
