@@ -4,6 +4,19 @@ const repository = require("./repository");
 function runTests() {
 
   let id = null;
+  test("Repository AddMovie", (t) => {
+    repository.addMovie({
+      titulo: "Vingadores",
+      sinopse: "Heróis mais poderosos da Terra",
+      duracao: 120,
+      dataLancamento: new Date(),
+      imagem: "https://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg",
+      categorias: ["Aventura"]
+    }, (err, result) => {
+      t.assert(!err && result.insertedCount > 0, "Movie added");
+      t.end();
+    })
+  })
 
   test("Repository GetAllMovies", (t) => {
     repository.getAllMovies((err, movies) => {

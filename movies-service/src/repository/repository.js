@@ -25,6 +25,16 @@ function getMoviePremieres(callback) {
   });
 }
 
+function addMovie(movie, callback) {
+  mongodb.connect((err, db) => {
+    if (err) return callback(err, null);
+    db.collection("movies").insertOne(movie, (err2, res) => {
+      if (err2) return callback(err2, res);
+      return callback(err2, res);
+    })
+  });
+}
+
 function disconnect() {
   return mongodb.disconnect()
 }
@@ -33,5 +43,6 @@ module.exports = {
   getAllMovies,
   getMovieById,
   getMoviePremieres,
+  addMovie,
   disconnect
 }

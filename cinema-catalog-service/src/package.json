@@ -1,0 +1,11 @@
+{
+  "name": "cinema-catalog-service",
+  "version": "1.0.0",
+  "description": "Provide cinema catalog info.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno Eduardo de Moura Ferreira",
+  "license": "ISC"
+}

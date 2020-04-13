@@ -1,3 +1,4 @@
+const schemas = require("./schemas");
 module.exports = (app, repository) => {
 
   app.get('/movies', (req, res, next) => {
@@ -22,5 +23,12 @@ module.exports = (app, repository) => {
     })
   })
 
-
+  app.post('/movies', (req, res, next) => {
+    const validated = schemas.movieSchema.validate(req.body);
+    if (validated.error) return res.status(400).json(validated.error);
+    repository.addMovie(validated.value, (err, result) => {
+      if (err) return next(err);
+      res.json(result);
+    })
+  })
 }

@@ -1,8 +1,6 @@
 ## Microserviços Cinema
 
-
-
-
+![](/assets/Microservice.png)
 
 ## Service ( Movies Service )
 
@@ -38,6 +36,10 @@
  - SuperTest : Para fazer teste de requisições http automatizadas
  ~~~javascript
  $ npm install supertest  
+ ~~~
+ - Hapi Joi : Para fazer validação de inputs 
+ ~~~javascript
+ $ npm i @hapi/joi
  ~~~
 
 ### Estrutura de pastas e arquivos
@@ -77,5 +79,34 @@ movies-services
 
 
 
+## Service ( Cinema Catalog Services )
 
-ultima aula assistida 14 13:50
+### Dependências do NodeJS
+ - Express : Para construir servidores WEB;
+ ~~~javascript
+ $ npm install express
+ ~~~
+ - Helmet : Módulo de Segurança
+ ~~~javascript
+ $ npm install helmet  
+ ~~~
+ - Tape : Biblioteca de Testes Unitários
+ ~~~javascript
+ $ npm install tape   
+ ~~~ 
+ - Morgan : Para fazer log de requisições no console
+ ~~~javascript
+ $ npm install morgan  
+ ~~~
+ - Mongodb : Para conexão com Banco de Dados;
+ ~~~javascript
+ $ npm install mongodb
+ ~~~
+ - SuperTest : Para fazer teste de requisições http automatizadas
+ ~~~javascript
+ $ npm install supertest  
+ ~~~
+ - Dotenv-safe : Para Carregamento de Variáveis de ambiente a partir de arquivos de configurações;
+ ~~~javascript
+ $ npm install dotenv-safe  
+ ~~~

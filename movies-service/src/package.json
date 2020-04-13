@@ -10,6 +10,7 @@
   "author": "Bruno Eduardo de Moura Ferreira",
   "license": "ISC",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "dotenv-safe": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^3.22.0",
