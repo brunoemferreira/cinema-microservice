@@ -7,5 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bruno Eduardo de Moura Ferreira",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "mongodb": "^3.5.5",
+    "morgan": "^1.10.0",
+    "supertest": "^4.0.2",
+    "tape": "^4.13.2"
+  }
 }
