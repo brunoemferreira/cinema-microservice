@@ -110,3 +110,26 @@ movies-services
  ~~~javascript
  $ npm install dotenv-safe  
  ~~~
+
+### Estrutura de pastas e arquivos
+~~~
+- movies-service/
+  | - data/
+  | - src/
+     | - api/
+         | - .js
+         | - .test.js
+     | - config/
+         | - mongodb.js
+         | - mongodb.test.js 
+     | - repository/
+         | - repository.js
+         | - repository.test.js 
+     | - server/
+         | - server.js
+     | - .env
+     | - .env.example    
+     | - index.js
+     | - index.test.js 
+     | - packages.json
+~~~
